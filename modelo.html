@@ -3,37 +3,84 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Site</title>
+    <title>Site do Batman</title>
+    <style>
+    *{
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color:rgb(0, 0, 0);
+     background-color:rgb(35, 163, 163);
+     font-family: system-ui, Arial, Sans-serif;
+     line-height: 1.5;
+    }
+    </style>
   </head>
+  <body id="topo">
 
-  <body>
-    <!-- TODO 01: HEADER com H1 (título) e P (subtítulo) -->
+    <div class="container" id="pagina">
+      <header class="box" id="cabecalho">
+        <div class="header-interno">
+          <h1 class="titulo">Site do Batman</h1>
+          <p>
+            Bem vindo a Gotham ity: <strong>vigilancia</strong>, 
+            <em>tecnologia</em>e estratégia.
+          </p>
+        </div>
+   </header>
 
-    <!-- TODO 02: NAV com uma lista (UL/LI) e 3 links (A) -->
-    <!-- Dica: use href="https://..." ou href="#" -->
+        <nav class="box" id="menu">
+          <div class="nav-interno">
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#apresentacao">Gotham</a></li>
+              <li><a class="nav-link" href="#galeria">Galeria</a></li>
+              <li><a class="nav-link" href="#tabela">Missões</a></li>  
+            </ul>
+          </div>
+        </nav>
+        <main id="conteudo">
+          <div class="row" id=" linha-1">
+            <section class="box-panel" id="apresentacao">
+              <h2>Quem é o Batman?</h2>
 
-    <!-- TODO 03: MAIN com as seções abaixo -->
+              <p>
+                Batman (Bruce wayne) é um personagem da DC Comics que atua como 
+                justiceiro de gotham. Ele não tem superpoderes: sua força está 
+                em <strong>treinamento</strong>, <em>inteligência</em> e recursos (ou seja, rico).
+              </strong></p>
 
-    <!-- SEÇÃO A: Apresentação -->
-    <!-- Use SECTION, inclua H2 e 2 parágrafos (P).
-         Em algum trecho use STRONG e em outro use EM. -->
+              <p>
+               Nas Histórias, Gotham costuma representar problemas sociais reais:
+               desigualdade, corrupção e violência urbana. Muitos quadrinhos usam o Batman
+               como forma de <strong> crítica Social</strong>, mostrando como decisões 
+               politicas, interesses econômicos, falhas nas instituições afetam o cotidiano 
+               das pessoas, cotidiano das pessoas, especialmente nas periferias. 
+              </p>
+            </section>
+          </div>
 
-    <!-- SEÇÃO B: Lista -->
-    <!-- Use SECTION, inclua H2 e uma lista (UL ou OL) com 4 itens (LI). -->
+          <sectiom class="box" id="galeria">
+            <h2>Galeria</h2>
+            <div class="gallery" id="galeria-imagens">
+            <img class="bat-img" src="bat1.jpg" alt="Batman com aura+1000" width="500" height="300">
+            <img class="bat-img" src="bat2.jpg" alt="Batman com aura+1000" width="500" height="300">
+            <img class="bat-img" src="bat3.webp" alt="Batman com aura+1000" width="500" height="300">
+            </div>
+          </sectiom>
+        </main>
 
-    <!-- SEÇÃO C: Mídia -->
-    <!-- Use SECTION, inclua H2 e um FIGURE com:
-         - IMG com src="", alt="", width="", height=""
-         - FIGCAPTION descrevendo a imagem
-         Regras: alt não pode ficar vazio; não usar style.
-    -->
-
-    <!-- SEÇÃO D: Tabela -->
-    <!-- Use SECTION, inclua H2 e uma TABLE com:
-         - uma linha de cabeçalho (TR) com TH: Item | Descrição | Prioridade
-         - 3 linhas (TR) com TD (valores livres, coerentes)
-    -->
-
-    <!-- TODO 04: FOOTER com um P e um link (A) para uma fonte usada na pesquisa -->
+        <footer class="box" id="rodape">
+          <p class="texto-rodape">
+            <a class="link" href="#topo">Topo</a>
+          </p>
+          <p class="texto-rodape">
+            Batman o Brabo
+          </p>
+        </footer>
+      </div>
+ 
   </body>
 </html>
